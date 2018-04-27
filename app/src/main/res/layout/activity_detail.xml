@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larasati.registrasimahasiswa.DetailActivity">
+
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Detail Data Mahasiswa" />
+
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_judul"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="51dp"
+        android:text="Nama :" />
+
+    <TextView
+        android:id="@+id/data_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_alignTop="@+id/txt_nama"
+        android:text="Fabyola Larasati Masyita" />
+
+    <TextView
+        android:id="@+id/txt_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_nama"
+        android:layout_below="@+id/txt_nama"
+        android:layout_marginTop="38dp"
+        android:text="NIM :" />
+
+    <TextView
+        android:id="@+id/data_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/data_nama"
+        android:layout_alignTop="@+id/txt_nim"
+        android:text="D42116510" />
+
+    <TextView
+        android:id="@+id/txt_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_nim"
+        android:layout_below="@+id/txt_nim"
+        android:layout_marginTop="31dp"
+        android:text="Prodi :" />
+
+    <TextView
+        android:id="@+id/data_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/data_nim"
+        android:layout_alignTop="@+id/txt_prodi"
+        android:text="Teknik Informatika" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_prodi"
+        android:layout_below="@+id/txt_prodi"
+        android:layout_marginTop="42dp"
+        android:text="Email :" />
+
+    <TextView
+        android:id="@+id/data_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/data_prodi"
+        android:layout_alignTop="@+id/txt_email"
+        android:text="fabyola@gmail.com" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_toEndOf="@+id/txt_judul"
+        android:onClick="kembaliLihat"
+        android:text="Kembali" />
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larasati.registrasimahasiswa.Registrasi">
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="39dp"
+        android:text="Nama :" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nama"
+        android:layout_below="@+id/edit_nama"
+        android:layout_marginTop="49dp"
+        android:text="NIM :" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Data Registrasi Mahasiswa"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nama"
+        android:layout_alignBottom="@+id/nama"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nim"
+        android:layout_alignBottom="@+id/nim"
+        android:layout_alignStart="@+id/edit_nama"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nim"
+        android:layout_below="@+id/edit_nim"
+        android:layout_marginTop="42dp"
+        android:text="Prodi :" />
+
+    <EditText
+        android:id="@+id/edit_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prodi"
+        android:layout_alignBottom="@+id/prodi"
+        android:layout_alignStart="@+id/edit_nim"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prodi"
+        android:layout_below="@+id/edit_prodi"
+        android:layout_marginTop="35dp"
+        android:text="Email :" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_prodi"
+        android:layout_below="@+id/edit_prodi"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button_kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp"
+        android:layout_marginStart="22dp"
+        android:onClick="backMain"
+        android:text="Kembali" />
+
+    <Button
+        android:id="@+id/button_kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_kembali"
+        android:layout_alignBottom="@+id/button_kembali"
+        android:layout_toStartOf="@+id/button_simpan"
+        android:onClick="kosongData"
+        android:text="Kosongkan" />
+
+    <Button
+        android:id="@+id/button_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_kosong"
+        android:layout_marginEnd="18dp"
+        android:onClick="createData"
+        android:text="Simpan" />
+
+</RelativeLayout>
